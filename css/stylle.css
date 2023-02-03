@@ -1,5 +1,7 @@
 @charset "UTF-8";
+@import url(stylle__home.css);
 :root {
+    --cor0: hsl(237, 12%, 33%);
     --font:"Kumbh Sans";
 }
 body {
