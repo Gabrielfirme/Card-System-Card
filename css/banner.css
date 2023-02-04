@@ -1,0 +1,75 @@
+@charset "UTF-8";
+.banner__cards {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    width: 80%;
+    margin: 10px auto;
+    background: rgb(154, 180, 220);
+    padding: 1em 2em;
+    border-radius: 10px 10px ;
+}
+.img__retract {
+    border-radius: 10px 10px;
+    box-shadow: 10px 5px gray;
+}
+
+.title__banner{
+    font:normal 700 35px var(--font) ;
+    color: var(--cor1);
+    padding: 1em 1em;
+}
+.card__condittions{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.5em;
+    
+}
+.Beneficios_card {
+    font: normal 400 18px var(--font1);
+    color: var(--cor1);
+    text-align: justify;
+    padding-right: 15px;
+
+}
+.mail {
+    width: 300px;
+    align-items: center;
+    border-radius: 10px 10px;
+    padding: 1.3em 2em;
+    margin: 2em 1em;
+}
+.mail::placeholder{
+    background: url(../img/email.svg) no-repeat;
+    background-position-y: center;
+    padding-left: 2em;
+    font: normal 100 15px var(--font3) ;
+    color: var(--cor0);
+}
+.cards__banner{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--cor1);
+   
+
+}
+.title_cards{
+    font: normal 700 20px var(--font);
+    text-align: center;
+}
+.fisic__cards{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+   
+    padding: 1.5em;
+}
+.beneficios{
+    font: normal 400 18px var(--font2);
+    padding: .5em 1em;
+    background: url(../img/icon-arrow-down.svg) no-repeat; 
+    background-position: right;
+}

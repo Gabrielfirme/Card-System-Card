@@ -1,9 +1,26 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family= Oswald: wght @500 & display=swap');
+@import url(../css/header.css);
+@import url(../css/banner.css);
+@import url(../css/faq.css);
+@font-face {
+    font-family:"Kumbh Sans";
+    src: url(../css/fonts/KumbhSans-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family:"Oswald" ;
+    src: url(../css/fonts/Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(../css/fonts/Poppins-Light.ttf)
+}
 :root {
     --cor0: hsl(237, 12%, 33%);
+    --cor1:#FFFFFF;
+    --cor2:#52A6A8;
     --font:"Kumbh Sans";
     --font1:"Oswald";
+    --font2:"Poppins";
 }
 
 * {
@@ -13,48 +30,44 @@ body {
     background-image: linear-gradient(to right,rgb(53, 88, 203),rgb(166, 166, 206));
     ;
 }
-.principal__header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1em 2em;
-    background: #52A6A9;
+.credit__client{
+    width: 95%;
+    margin: 0 auto;
+   
 }
-.nav_menu{
-    font: normal 500 18px var(--font1);
-    color: var(--cor0);
+.Post_business{
+    display: flex;
+    align-items: flex-start;
+}
+.credit_concept{
+    padding: 2em;
+    margin-left: 5%;
+    box-shadow: 3px 4px solid gray;;
+}
+.credit_text{
+  
+    font: normal 600 28px var(--font2);
+    color: var(--cor1);
+    padding: 2em;
+    
+}
+.hand_card {
+    position:absolute;
+    top:60%;
+    left:60% ;
+  
+}
+#footer_principal{
+    display: flex;
+    justify-content: center;
+    font: normal bold 20px var(--font);
+    color: var(--cor1);
+    background: var(--cor0);
+}
+
+#footer_principal a{
     text-decoration: none;
-    text-transform: uppercase;
-    margin-left: 10px;
-}
-.nav_menu:hover {
-    color:white;
-   transition: .35s; 
-   cursor: pointer;
-}
-.banner__cards {
-    display: flex;
-    justify-content: space-between;
-    width: 94%;
-    margin: 10px auto;
-    background: white;
-    padding: 1em 2em;
-}
-.img__retract {
-    border-radius: 10px 10px;
-    box-shadow: 10px 5px gray;
-}
-.title__banner{
-    font:normal 700 20px var(--font) ;
-   padding: 1em 2em;
-}
-.mail {
-    display: flex;
-    align-items: center;
-    border-radius: 10px 10px;
-    padding: 1em 3em;
-    margin-top: 2em;
-    background: url(../img/email.svg) no-repeat;
-    background-position: left;
+    color: rgb(245, 237, 237);
 
 }
+

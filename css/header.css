@@ -1,0 +1,41 @@
+@charset "UTF-8";
+.principal__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5em 2em;
+    background:var(--cor2);
+    border-bottom: 2px solid gray;
+}
+.nav_menu{
+    font: normal 500 18px var(--font1);
+    color: var(--cor0);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+.logomarca {
+    border-radius: 20px;
+}
+.nav_menu:hover {
+    color:white;
+   transition: .35s; 
+   cursor: pointer;
+}
+.Button_cadastre_se{
+    font: normal bold 25px var(--font2);
+    color: var(--cor1);
+    background: var(--cor2);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .5em 1.5em;
+    border-radius: 40px 40px;
+}
+.Button_cadastre_se:active{
+    color: var(--cor1);
+}
+.Button_cadastre_se:hover{
+    cursor: pointer;
+    background: var(--cor1);
+    color:var(--cor2);
+}
