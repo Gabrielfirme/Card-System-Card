@@ -94,7 +94,9 @@ body {
         
     }
     #container {
-        width: 360px;
+        width: 300px;
+    
+        background: url(../img/bg-pattern-desktop.svg) no-repeat;
     
     }
     .credit__client{
@@ -115,14 +117,16 @@ body {
     }
     .credit_text{
       width: 100%;
-      text-align: justify;
+      text-align: center;
       font: normal 600 16px var(--font2);
       color: var(--cor1);
+      padding: 2em;
         
         
     }
     #footer_principal{
         display: block;
+        text-align: center;
         width: 100%;
         font: normal bold 20px var(--font);
         color: var(--cor1);

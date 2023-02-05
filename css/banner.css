@@ -75,7 +75,14 @@
     background-position: right;
 }
 @media screen and (max-width:844px){
-    .banner__cards {
+    main{
+        width: 390px;
+    }
+        .banner{
+        display: flex;
+        justify-content: center;
+        }
+        .banner__cards {
         display:block;
         align-items: top;
         justify-content: space-between;
