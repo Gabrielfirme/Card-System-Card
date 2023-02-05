@@ -75,7 +75,7 @@ body {
     font: normal bold 20px var(--font);
     color: var(--cor1);
     background: var(--cor0);
-    backface-visibility:hidden;
+    
 }
 
 #footer_principal a{
@@ -84,20 +84,15 @@ body {
 
 }
 @media screen and (max-width:844px){
-    *{
-        margin: 0;
-        padding: 0;
-
-    }
+   
     body {
+        width: 390px;
         background-image: linear-gradient(to right,rgb(53, 88, 203),rgb(166, 166, 206));
         
     }
     #container {
         width: 300px;
-    
-        background: url(../img/bg-pattern-desktop.svg) no-repeat;
-    
+
     }
     .credit__client{
     
@@ -107,27 +102,31 @@ body {
     }
 
     .Post_business{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding-right: 10px;
        
     }
     .credit_concept{
-        width: 80%;
-        box-shadow: 3px 4px solid gray;;
+        width: 90%;
+        box-shadow: 3px 4px solid gray;
     }
     .credit_text{
-      width: 100%;
-      text-align: center;
-      font: normal 600 16px var(--font2);
+      
+      text-align: justify;
+      font: normal 600 18px var(--font2);
       color: var(--cor1);
-      padding: 2em;
+     
         
         
     }
     #footer_principal{
-        display: block;
+        width: 390px;
+        display: inline-block;
         text-align: center;
-        width: 100%;
+        
         font: normal bold 20px var(--font);
         color: var(--cor1);
         background: var(--cor0);

@@ -17,8 +17,10 @@
 
 }
 .safe {
+    display: flex;
+    flex-direction: column;
     width: 40%;
-    height: 380px;
+    height: 390px;
     background: var(--cor2);
     margin: 1em;
     padding: 2em;
@@ -37,55 +39,26 @@
     padding-bottom: .8em;
     text-align: left;
 }
-.money_safethree{
+.position_button{
     display: flex;
-    justify-content: center;
-    position: relative;
+    align-items: center;
+    justify-content:center;
+    padding-bottom:2em ;
+}
+.money_safe{
     font: normal 600 28px var(--font1);
     color: green;
     text-decoration: none;
-    top:91px;
     background: var(--cor1);
-    padding: 1em;
+    padding: 1em .5em;
     border-radius: 20px 20px;
 }
-.money_safeone{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    font: normal 600 28px var(--font1);
-    color: green;
-    text-decoration: none;
-    top:13px;
-    background: var(--cor1);
-    padding: 1em;
-    border-radius: 20px 20px;
-}
-.money_safetwo{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    font: normal 600 28px var(--font1);
-    color: green;
-    text-decoration: none;
-    bottom: 12px;
-    background: var(--cor1);
-    padding: 1em;
-    border-radius: 20px 20px;
-}
-.money_safethree:hover {
-    background-color: rgb(128, 109, 109);
-    color: greenyellow;
-}
-.money_safetwo:hover{
-    background-color: rgb(128, 109, 109);
-    color: greenyellow;
 
-}
-.money_safeone:hover{
+.money_safe:hover {
     background-color: rgb(128, 109, 109);
     color: greenyellow;
 }
+
 footer{
     width:100%;
     position: fixed;
@@ -94,7 +67,8 @@ footer{
 @media screen and (max-width:800px){
 
 #seguros{
-    width: 90%;
+    display: block;
+    width:370px ;
     margin: 0 auto;
     display: block;
     align-items: center;
@@ -102,6 +76,7 @@ footer{
 }
 .safe {
     width: 70%;
+    margin: 10px auto;
     height: 500px;
     background: var(--cor2);
     margin-bottom: 30px;
@@ -128,39 +103,11 @@ footer{
     padding-bottom: .5em;
     text-align: left;
 }
-.money_safethree{
+.position_button{
     display: flex;
-    justify-content: center;
-    position: relative;
-    top:21px;
-    font: normal 600 28px var(--font1);
-    color: green;
-    text-decoration: none;
-    top:71px;
-    background: var(--cor1);
-    padding: .3em;
-    border-radius: 20px 20px;
+    align-items: center;
+    justify-content:center;
+    padding-bottom:2em ;
 }
-.money_safeone{
-    display: block;
-    position: absolute;
-    top: 145%;
-    color: green;
-    text-decoration: none;
-    background: var(--cor1);
-    padding: .3em;
-    border-radius: 20px 20px;
-}
-.money_safetwo{
-   
-    position: relative;
-    top:50px ;
-    font: normal 600 28px var(--font1);
-    color: green;
-    text-decoration: none;
-    background: var(--cor1);
-    padding: .3em;
-    border-radius: 20px 20px;
-    margin-bottom: 30px;
-}
+
 }
