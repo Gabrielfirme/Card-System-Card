@@ -2,6 +2,9 @@
 @import url(../css/header.css);
 @import url(../css/banner.css);
 @import url(../css/faq.css);
+@import url(../css/security.css);
+@import url(../css/form.css);
+@import url(../css/planos.css);
 @font-face {
     font-family:"Kumbh Sans";
     src: url(../css/fonts/KumbhSans-VariableFont_wght.ttf);
@@ -14,6 +17,7 @@
     font-family: "Poppins";
     src: url(../css/fonts/Poppins-Light.ttf)
 }
+
 :root {
     --cor0: hsl(237, 12%, 33%);
     --cor1:#FFFFFF;
@@ -21,6 +25,7 @@
     --font:"Kumbh Sans";
     --font1:"Oswald";
     --font2:"Poppins";
+    --font3: "Arial,Helvetica,sans-serif";
 }
 
 * {
@@ -29,6 +34,10 @@
 body {
     background-image: linear-gradient(to right,rgb(53, 88, 203),rgb(166, 166, 206));
     ;
+}
+#container {
+    background: url(../img/bg-pattern-desktop.svg);
+
 }
 .credit__client{
     width: 95%;
@@ -58,11 +67,15 @@ body {
   
 }
 #footer_principal{
+    width: 100%;
+    position: static;
+    bottom: 0;
     display: flex;
-    justify-content: center;
+    justify-content:center ;
     font: normal bold 20px var(--font);
     color: var(--cor1);
     background: var(--cor0);
+    backface-visibility:hidden;
 }
 
 #footer_principal a{
@@ -70,4 +83,59 @@ body {
     color: rgb(245, 237, 237);
 
 }
+@media screen and (max-width:844px){
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+    body {
+        background-image: linear-gradient(to right,rgb(53, 88, 203),rgb(166, 166, 206));
+        
+    }
+    #container {
+        width: 360px;
+    
+    }
+    .credit__client{
+    
+        width: 350px;
+        margin: 0 auto;
+       
+    }
+
+    .Post_business{
+        display: block;
+        padding-right: 10px;
+       
+    }
+    .credit_concept{
+        width: 80%;
+        box-shadow: 3px 4px solid gray;;
+    }
+    .credit_text{
+      width: 100%;
+      text-align: justify;
+      font: normal 600 16px var(--font2);
+      color: var(--cor1);
+        
+        
+    }
+    #footer_principal{
+        display: block;
+        width: 100%;
+        font: normal bold 20px var(--font);
+        color: var(--cor1);
+        background: var(--cor0);
+    }
+        
+    
+    #footer_principal a{
+        text-decoration: none;
+        color: rgb(245, 237, 237);
+    
+    }
+
+}
+
 

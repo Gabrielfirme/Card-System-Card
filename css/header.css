@@ -2,14 +2,14 @@
 .principal__header{
     display: flex;
     align-items: center;
+    position: static;
     justify-content: space-between;
     padding: .5em 2em;
-    background:var(--cor2);
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 .nav_menu{
     font: normal 500 18px var(--font1);
-    color: var(--cor0);
+    color: var(--cor1);
     text-decoration: none;
     text-transform: uppercase;
     margin-left: 10px;
@@ -18,7 +18,7 @@
     border-radius: 20px;
 }
 .nav_menu:hover {
-    color:white;
+    color:var(--cor3);
    transition: .35s; 
    cursor: pointer;
 }
@@ -28,8 +28,9 @@
     background: var(--cor2);
     text-decoration: none;
     text-transform: uppercase;
-    padding: .5em 1.5em;
+    padding: .5em 1.7em .5em 1.5em;
     border-radius: 40px 40px;
+  
 }
 .Button_cadastre_se:active{
     color: var(--cor1);
@@ -38,4 +39,51 @@
     cursor: pointer;
     background: var(--cor1);
     color:var(--cor2);
+}
+@media screen and (max-width:844px){
+    .principal__header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: .5em 1em;
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+    .logomarca {
+        justify-content: center;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    .nav_menu{
+        font: normal 500 18px var(--font1);
+        color: var(--cor1);
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-left: 5px;
+        margin-top: 10px;
+        
+    }
+    .navigation__menu{
+        display: inline-block;
+    }
+    .Button_cadastre_se{
+        font: normal bold 25px var(--font2);
+        color: var(--cor1);
+        background: var(--cor2);
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 40px 40px;
+      
+    }
+    .Button_cadastre_se:active{
+        color: var(--cor1);
+    }
+    .Button_cadastre_se:hover{
+        cursor: pointer;
+        background: var(--cor1);
+        color:var(--cor2);
+    }
+
 }

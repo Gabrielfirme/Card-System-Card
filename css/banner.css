@@ -32,6 +32,7 @@
     padding-right: 15px;
 
 }
+
 .mail {
     width: 300px;
     align-items: center;
@@ -48,7 +49,7 @@
 }
 .cards__banner{
     width: 100%;
-    margin: 0 auto;
+    margin: 20px auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -72,4 +73,79 @@
     padding: .5em 1em;
     background: url(../img/icon-arrow-down.svg) no-repeat; 
     background-position: right;
+}
+@media screen and (max-width:844px){
+    .banner__cards {
+        display:block;
+        align-items: top;
+        justify-content: space-between;
+        width: 80%;
+        margin: 10px auto;
+        background: rgb(154, 180, 220);
+        padding: 1em 2em;
+        border-radius: 10px 10px ;
+    }
+    .img__retract {
+        display: none;
+    }
+    
+    .title__banner{
+        font:normal 700 35px var(--font) ;
+        color: var(--cor1);
+        padding: 1em 1em;
+    }
+    .card__condittions{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-left: 2.5em;
+        
+    }
+    .Beneficios_card {
+        font: normal 400 18px var(--font1);
+        color: var(--cor1);
+        text-align: justify;
+        padding-right: 15px;
+    
+    }
+    .mail {
+        width: 200px;
+        align-items: center;
+        border-radius: 10px 10px;
+        padding: 1.3em 1em;
+        margin: 2em ;
+    }
+    .mail::placeholder{
+        background: url(../img/email.svg) no-repeat;
+        background-position-y: center;
+        padding-left: 2em;
+        font: normal 100 15px var(--font3) ;
+        color: var(--cor0);
+    }
+    .cards__banner{
+        width: 300px;
+        margin: 20px auto;
+        display: block;
+        
+        background: var(--cor1);
+        padding-right: 8px;
+       
+    
+    }
+    .title_cards{
+        font: normal 700 20px var(--font);
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .fisic__cards{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+      
+    }
+    .beneficios{
+        font: normal 400 18px var(--font2);
+        padding: .5em 1em;
+        
+    }
 }

@@ -1,0 +1,142 @@
+@charset "UTF-8";
+#dados__form{
+    margin: 40px auto;
+}
+
+.container_form{
+    width: 940px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    padding-top:20px;
+    padding-bottom: 20px;
+ 
+   
+}
+.img__abertura_de_contas{
+    border-radius: 10px 10px;
+}
+.enviar{
+    font: normal bolder 20px var(--font1);
+    margin-top: 30px;
+    position: relative;
+    left:0px;
+    padding: 1em;
+}
+.enviar:hover{
+    cursor: pointer;
+    font: normal bold 20px var(--font1);
+    color: var(--cor1);
+    background:var(--cor2);
+   
+}
+
+.dados{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    justify-content: center;
+    columns: 2;
+    padding: 2em;
+    
+
+}
+.label_form_contas{
+    font: normal 500 20px var(--font);
+    color: var(--cor1);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+}
+.input_form_account{
+    width: 320px;
+    padding: .5em 1em;
+    margin-top: 10px;
+}
+@media screen and (max-width:844px){
+    #dados__form{
+        margin: 40px auto;
+    }
+    
+    .container_form{
+        width: 380px;
+        margin: 20px auto;
+        display: block;
+        padding-top:20px;
+        padding-bottom: 20px;
+     
+       
+    }
+    .img__abertura_de_contas{
+        width: 80%;
+       display: block;
+       position: relative;
+       left: 10%;
+        border-radius: 10px 10px;
+    }
+   
+    
+    .dados{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    
+        justify-content: center;
+        
+        padding: 2em;
+        
+    
+    }
+    .label_form_contas{
+        font: normal 500 20px var(--font);
+        color: var(--cor1);
+        text-transform: uppercase;
+        text-align: left;
+        margin-top: 10px;
+    }
+    .input_form_account{
+        width: 300px;
+        padding: .5em auto;
+        margin-top: 10px;
+    }
+    .enviar{
+            width: 330px;
+            font: normal bolder 20px var(--font1);
+            margin-top: 30px;
+            padding: 1em;
+        }
+    .enviar:hover{
+            cursor: pointer;
+            font: normal bold 20px var(--font1);
+            color: var(--cor1);
+            background:var(--cor2);
+           
+        }
+       
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

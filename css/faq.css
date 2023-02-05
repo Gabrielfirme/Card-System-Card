@@ -55,3 +55,39 @@ body {
     top: 55%;
     left: 3%;
 }
+@media screen and (max-width:844px){
+    .Faq__container {
+        display: block;
+        width:320px;
+        height: 800px;
+        padding: 1em 1em;
+        background: white;
+        border-radius: 25px 25px;
+    }
+    .class__token{
+        width: 100%;
+        display: block;
+        padding-left: 30px;
+        background-image: url(../img/bg-pattern-desktop.svg);
+        background-position: center;
+  
+   
+
+}
+    .frequents_questions{
+        font: normal 400 16px var(--font);
+        border-bottom: 2px solid hsl(240, 5%, 91%);
+        margin-bottom: 10px;
+       
+        background: url(../img/icon-arrow-down.svg) no-repeat;
+        background-position: right;
+
+}
+    .faq_title{
+    font: normal 700 45px var(--font);
+    color: hsl(237, 12%, 33%);
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+}
